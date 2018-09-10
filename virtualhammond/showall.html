@@ -1,0 +1,152 @@
+<!-- SB Admin - Bootstrap Admin Template - Start Bootstrap
+A free, open source, Bootstrap admin theme created by Start Bootstrap.
+Source: http://startbootstrap.com/template-overviews/sb-admin/ -->
+<!--
+Luís Leira
+Laboratórios de Informática, 2015
+Projeto 2
+
+Interface Web
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Play your music here!">
+    <meta name="keywords" content="Web, App, Virtual Hammond, Music, Universidade de Aveiro, Computing">
+    <meta name="author" content="Abel Fernandes Neto, Daniel Azevedo Alves, Diogo Daniel Soares Ferreira, Luís Davide Jesus Leira">
+
+    <title>Virtual Hammond</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Styles CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Virtual Hammond font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> VIRTUAL HAMMOND</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-university"></i> UA<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="http://www.ua.pt/" target="_blank"><i class="fa fa-fw fa-institution"></i> University of Aveiro</a>
+                        </li>
+                        <li>
+                            <a href="http://code.ua.pt/" target="_blank"><i class="fa fa-fw fa-cloud"></i> CodeUA</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info"></i> About us<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/developers.html"><i class="fa fa-fw fa-group"></i> Developers</a>
+                        </li>
+                        <li>
+                            <a href="http://code.ua.pt/projects/labi2015-proj2-g3" target="_blank"><i class="fa fa-fw fa-database"></i> Repository</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="/index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="/newmusic.html"><i class="fa fa-fw fa-music"></i> New music</a>
+                    </li>
+                    <li class="active">
+                        <a href="/showall.html"><i class="fa fa-fw fa-archive"></i> Show all</a>
+                    </li>
+                    <img src="images/logoDETI2.png" class="logouadeti" />
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Show all
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li class="active">
+                                <i class="fa fa-archive"></i>  <a href="/showall.html">Show all</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+                
+                <div class="col-sm-4 showalltable" id="showallsongs">
+				<!-- JS will display the content here -->
+                </div>
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+        <p class="footerlike">Virtual Hammond web app - Group 3 - Computer Labs 2015</p>
+        
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Scripts -->
+    <script src="js/showall.js"></script>
+
+</body>
+
+</html>

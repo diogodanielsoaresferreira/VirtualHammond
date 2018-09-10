@@ -1,0 +1,87 @@
+﻿/*
+Luís Leira
+Laboratórios de Informática, 2015
+Projeto 2
+
+Interface Web
+*/
+
+
+.navbar-brand {
+   font-family: 'Lato', sans-serif;
+   color: #FFFFFF;
+   text-shadow: 1px 1px #1A1A1A;
+}
+
+.navbar-fixed-top {
+   background-color: #337ab7;
+   box-shadow: 0px 0px 10px #999;
+}
+
+.imgsize {
+   display: block;
+   text-align: center;
+   align-content:center; 
+   margin-left: auto;
+   margin-right: auto;
+   height: auto;
+   max-width: 95%;
+}
+
+.footerlike {
+   padding-top: 5px;
+   text-align: center;
+   color: #666;
+}
+
+.showalltable {
+   margin-left: auto;
+   margin-right: auto;
+   height: 100%;
+   width: 100%;
+}
+
+.logouadeti {
+   display: block;
+   height: auto;
+   max-width: 75%;
+   margin-left: 7%;
+   margin-right: auto;
+   padding-top: 5%;
+}
+
+#page-wrapper {
+   border-radius: 0px 0px 10px 10px;
+   box-shadow: 0px 0px 7px #999;
+}
+
+.thumbsimg {
+   position: relative;
+   display: inline-block;
+   height: auto;
+   max-width: 2%;
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+.panel {
+   padding: 15px;
+   background-color: white;
+   word-wrap: break-word;
+   display: none;
+}
+
+.modal {
+   text-align: center;
+   height: auto;
+   max-width: auto;
+   padding-top: 20px;
+}
+
+.modal-body {
+   text-align: center;
+}
+
+.rightspace {
+   margin-right: 5px;
+}

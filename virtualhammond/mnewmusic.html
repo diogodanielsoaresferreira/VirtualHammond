@@ -1,0 +1,114 @@
+<!-- Mobile app - Ratchet based 
+Source: http://goratchet.com/ -->
+<!--
+Luís Leira
+Laboratórios de Informática, 2015
+Projeto 2
+
+Interface Web
+-->
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Virtual Hammond</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="mobile/css/ratchet.css">
+		<link rel="stylesheet" href="mobile/css/ratchet-theme-ios.css">
+		<link rel="stylesheet" href="mobile/css/app.css">
+		<script src="mobile/js/ratchet.js"></script>
+        <!-- jQuery -->
+        <script src="mobile/js/jquery.js"></script>
+        <!-- JS file -->
+        <script src="mobile/js/app.js"></script>
+		<!--Virtual Hammond font-->
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<header class="bar bar-nav">
+			<h1 class="title titletop">New music</h1>
+            <a class="pull-right" href="#myModal">
+                <span class="icon icon-person"></span>
+            </a>
+        </header>
+		<div class="bar bar-footer">
+		</div>
+		<div class="content">
+            <div id="myModal" class="modal">
+              <header class="bar bar-nav">
+                <a class="icon icon-close pull-right" href="#myModal"></a>
+                <h1 class="title"><b>Developers</b></h1>
+              </header>
+              <div class="content devmodal">
+                <div class="content-padded">
+                    <div class="card">
+                      <ul class="table-view">
+                        <li class="table-view-cell"><a href="mailto:abel.neto@ua.pt">Abel Fernandes Neto</a></li>
+                        <li class="table-view-cell"><a href="mailto:da.alves@ua.pt">Daniel Azevedo Alves</a></li>
+                        <li class="table-view-cell"><a href="mailto:diogodanielsoaresferreira@ua.pt">Diogo Daniel Soares Ferreira</a></li>
+                        <li class="table-view-cell"><a href="mailto:luisleira@ua.pt">Luís Davide Jesus Leira</a></li>
+                      </ul>
+                    </div>
+                    <br>
+                    <p>We are four students of Computer and Telematics Engineering in the University of Aveiro. This Web application was created and developed as our second project for Computer Labs.</p>
+                    <br>
+                    <p>You can see our repository <a href="http://code.ua.pt/projects/labi2015-proj2-g3">here</a>.</p>
+                </div>
+              </div>
+            </div>
+			<div class="content-padded">
+                <form id="newmusic">
+                  <input type="text" required="true" placeholder="Song name" id="nameinput">
+                  <input type="text" required="true" placeholder="Enter the song in RTTTL format" id="songinput">
+                  <input type="number" required="true" placeholder="Song register (9 numbers between 0 and 8)" id="registerinput">
+                  <div class="effects-view">
+                    <ul class="table-view">
+                            <li class="table-view-cell">
+                                Echo
+                                <input type="checkbox" class="pull-right" id="echoinput">
+                            </li>
+                            <li class="table-view-cell">
+                                Tremolo
+                                 <input type="checkbox" class="pull-right" id="treminput">
+                            </li>
+                            <li class="table-view-cell">
+                                Distortion
+                                <input type="checkbox" class="pull-right" id="distinput">
+                            </li>
+                           <li class="table-view-cell">
+                                Percussion
+                                <input type="checkbox" class="pull-right" id="percinput">
+                            </li>
+                           <li class="table-view-cell">
+                                Chorus
+                                <input type="checkbox" class="pull-right" id="chorusinput">
+                            </li>
+                           <li class="table-view-cell">
+                                Envelope
+                                <input type="checkbox" class="pull-right"  id="envinput">
+                            </li>
+                    </ul>
+                  </div>
+                  <button type="submit" class="btn btn-positive btn-block" id="addsong">Add song</button>
+                </form>
+            </div>
+            <nav class="bar bar-tab">
+              <a class="tab-item" href="/mindex.html">
+                <span class="icon icon-home"></span>
+                <span class="tab-label">Home</span>
+              </a>
+              <a class="tab-item active" href="/mnewmusic.html">
+                <span class="icon icon-compose"></span>
+                <span class="tab-label">New music</span>
+              </a>
+              <a class="tab-item" href="/mshowall.html">
+                <span class="icon icon-list"></span>
+                <span class="tab-label">Show all</span>
+              </a>
+            </nav>
+        </div>
+	</body>
+</html>
